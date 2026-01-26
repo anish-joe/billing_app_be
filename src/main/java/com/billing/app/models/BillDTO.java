@@ -1,121 +1,121 @@
 package com.billing.app.models;
 
 public class BillDTO {
-	private Integer productId;
-	private String productName;
-	private String productImage;
-	private String productManDate;
-	private String productManufacturer;
-	private String productExpDate;
-	private String productCategory;
-	private Double productPrice;
-	private Integer productQuantity;
-	private Integer productPurchaseQty;
+    private Integer productId;
+    private String productName;
+    private String productImage;
+    private String productManDate;
+    private String productManufacturer;
+    private String productExpDate;
+    private String productCategory;
+    private Double productPrice;
+    private Integer productQuantity;
+    private Integer productPurchaseQty;
 
-	public Integer getProductId() {
-		return productId;
-	}
+    public BillDTO(Integer productId, String productName, String productImage, String productManDate,
+                   String productManufacturer, String productExpDate, String productCategory, Double productPrice,
+                   Integer productQuantity, Integer productPurchaseQty) {
+        this.productId = productId;
+        this.productName = productName;
+        this.productImage = productImage;
+        this.productManDate = productManDate;
+        this.productManufacturer = productManufacturer;
+        this.productExpDate = productExpDate;
+        this.productCategory = productCategory;
+        this.productPrice = productPrice;
+        this.productQuantity = productQuantity;
+        this.productPurchaseQty = productPurchaseQty;
+    }
 
-	public void setProductId(Integer productId) {
-		this.productId = productId;
-	}
+    public BillDTO() {
+    }
 
-	public String getProductName() {
-		return productName;
-	}
+    public Integer getProductId() {
+        return productId;
+    }
 
-	public void setProductName(String productName) {
-		this.productName = productName;
-	}
+    public void setProductId(Integer productId) {
+        this.productId = productId;
+    }
 
-	public String getProductImage() {
-		return productImage;
-	}
+    public String getProductName() {
+        return productName;
+    }
 
-	public void setProductImage(String productImage) {
-		this.productImage = productImage;
-	}
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
 
-	public String getProductManDate() {
-		return productManDate;
-	}
+    public String getProductImage() {
+        return productImage;
+    }
 
-	public void setProductManDate(String productManDate) {
-		this.productManDate = productManDate;
-	}
+    public void setProductImage(String productImage) {
+        this.productImage = productImage;
+    }
 
-	public String getProductManufacturer() {
-		return productManufacturer;
-	}
+    public String getProductManDate() {
+        return productManDate;
+    }
 
-	public void setProductManufacturer(String productManufacturer) {
-		this.productManufacturer = productManufacturer;
-	}
+    public void setProductManDate(String productManDate) {
+        this.productManDate = productManDate;
+    }
 
-	public String getProductExpDate() {
-		return productExpDate;
-	}
+    public String getProductManufacturer() {
+        return productManufacturer;
+    }
 
-	public void setProductExpDate(String productExpDate) {
-		this.productExpDate = productExpDate;
-	}
+    public void setProductManufacturer(String productManufacturer) {
+        this.productManufacturer = productManufacturer;
+    }
 
-	public String getProductCategory() {
-		return productCategory;
-	}
+    public String getProductExpDate() {
+        return productExpDate;
+    }
 
-	public void setProductCategory(String productCategory) {
-		this.productCategory = productCategory;
-	}
+    public void setProductExpDate(String productExpDate) {
+        this.productExpDate = productExpDate;
+    }
 
-	public Double getProductPrice() {
-		return productPrice;
-	}
+    public String getProductCategory() {
+        return productCategory;
+    }
 
-	public void setProductPrice(Double productPrice) {
-		this.productPrice = productPrice;
-	}
+    public void setProductCategory(String productCategory) {
+        this.productCategory = productCategory;
+    }
 
-	public Integer getProductQuantity() {
-		return productQuantity;
-	}
+    public Double getProductPrice() {
+        return productPrice;
+    }
 
-	public void setProductQuantity(Integer productQuantity) {
-		this.productQuantity = productQuantity;
-	}
+    public void setProductPrice(Double productPrice) {
+        this.productPrice = productPrice;
+    }
 
-	public Integer getProductPurchaseQty() {
-		return productPurchaseQty;
-	}
+    public Integer getProductQuantity() {
+        return productQuantity;
+    }
 
-	public void setProductPurchaseQty(Integer productPurchaseQty) {
-		this.productPurchaseQty = productPurchaseQty;
-	}
+    public void setProductQuantity(Integer productQuantity) {
+        this.productQuantity = productQuantity;
+    }
 
-	public BillDTO(Integer productId, String productName, String productImage, String productManDate,
-			String productManufacturer, String productExpDate, String productCategory, Double productPrice,
-			Integer productQuantity, Integer productPurchaseQty) {
-		this.productId = productId;
-		this.productName = productName;
-		this.productImage = productImage;
-		this.productManDate = productManDate;
-		this.productManufacturer = productManufacturer;
-		this.productExpDate = productExpDate;
-		this.productCategory = productCategory;
-		this.productPrice = productPrice;
-		this.productQuantity = productQuantity;
-		this.productPurchaseQty = productPurchaseQty;
-	}
+    public Integer getProductPurchaseQty() {
+        return productPurchaseQty;
+    }
 
-	@Override
-	public String toString() {
-		return "BillDTO [productId=" + productId + ", productName=" + productName + ", productImage=" + productImage
-				+ ", productManDate=" + productManDate + ", productManufacturer=" + productManufacturer
-				+ ", productExpDate=" + productExpDate + ", productCategory=" + productCategory + ", productPrice="
-				+ productPrice + ", productQuantity=" + productQuantity + ", productPurchaseQty=" + productPurchaseQty
-				+ "]";
-	}
+    public void setProductPurchaseQty(Integer productPurchaseQty) {
+        this.productPurchaseQty = productPurchaseQty;
+    }
 
-	public BillDTO() {
-	}
+    @Override
+    public String toString() {
+        return "BillDTO [productId=" + productId + ", productName=" + productName + ", productImage=" + productImage
+                + ", productManDate=" + productManDate + ", productManufacturer=" + productManufacturer
+                + ", productExpDate=" + productExpDate + ", productCategory=" + productCategory + ", productPrice="
+                + productPrice + ", productQuantity=" + productQuantity + ", productPurchaseQty=" + productPurchaseQty
+                + "]";
+    }
 }
