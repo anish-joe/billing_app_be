@@ -57,10 +57,7 @@ public class CashierServImpl implements CashierService {
     @Override
     public CashierModel viewCashier(Integer id) {
         Optional<CashierModel> op = repository.findById(id);
-        if (op.isPresent()) {
-            return op.get();
-        }
-        return new CashierModel();
+        return op.orElseGet(CashierModel::new);
     }
 
     @Override

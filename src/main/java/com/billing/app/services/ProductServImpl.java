@@ -41,10 +41,7 @@ public class ProductServImpl implements ProductService {
     @Override
     public ProductModel viewProduct(Integer id) {
         Optional<ProductModel> op = repository.findById(id);
-        if (op.isPresent()) {
-            return op.get();
-        }
-        return new ProductModel();
+        return op.orElseGet(ProductModel::new);
     }
 
     @Override

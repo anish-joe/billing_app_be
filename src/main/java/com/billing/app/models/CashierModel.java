@@ -1,9 +1,15 @@
 package com.billing.app.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "cashier_details")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class CashierModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,52 +21,4 @@ public class CashierModel {
     private String cashierEmail;
     @Column(name = "cashier_password")
     private String cashierPassword;
-
-    public CashierModel(Integer cashierId, String cashierName, String cashierEmail, String cashierPassword) {
-        this.cashierId = cashierId;
-        this.cashierName = cashierName;
-        this.cashierEmail = cashierEmail;
-        this.cashierPassword = cashierPassword;
-    }
-
-    public CashierModel() {
-    }
-
-    public Integer getCashierId() {
-        return cashierId;
-    }
-
-    public void setCashierId(Integer cashierId) {
-        this.cashierId = cashierId;
-    }
-
-    public String getCashierName() {
-        return cashierName;
-    }
-
-    public void setCashierName(String cashierName) {
-        this.cashierName = cashierName;
-    }
-
-    public String getCashierEmail() {
-        return cashierEmail;
-    }
-
-    public void setCashierEmail(String cashierEmail) {
-        this.cashierEmail = cashierEmail;
-    }
-
-    public String getCashierPassword() {
-        return cashierPassword;
-    }
-
-    public void setCashierPassword(String cashierPassword) {
-        this.cashierPassword = cashierPassword;
-    }
-
-    @Override
-    public String toString() {
-        return "CashierModel [cashierId=" + cashierId + ", cashierName=" + cashierName + ", cashierEmail="
-                + cashierEmail + ", cashierPassword=" + cashierPassword + "]";
-    }
 }
